@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Manuel Serrano Civantos | Ingeniero Informático de Software</title>
+    <meta name="description" content="Portafolio profesional de Manuel Serrano Civantos, Ingeniero Informático especializado en arquitecturas de software robustas, seguras y escalables.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div id="app">
+      <nav id="navbar" class="glass">
+        <div class="nav-content">
+          <div class="logo">MSC<span>.</span></div>
+          <ul class="nav-links">
+            <li><a href="#hero">Inicio</a></li>
+            <li><a href="#about">Perfil</a></li>
+            <li><a href="#experience">Experiencia</a></li>
+            <li><a href="#projects">Proyectos</a></li>
+            <li><a href="#skills">Habilidades</a></li>
+            <li><a href="#contact">Contacto</a></li>
+          </ul>
+          <div class="nav-cta">
+            <a href="/CV_Manuel_Serrano.pdf" download class="btn btn-outline" style="margin-right: 10px;">Descargar CV</a>
+            <a href="mailto:mserranocivantos02@gmail.com" class="btn btn-secondary">Contactar</a>
+          </div>
+        </div>
+      </nav>
+
+      <main>
+        <section id="hero" class="hero-section">
+          <div class="hero-bg">
+            <div class="gradient-sphere sphere-1"></div>
+            <div class="gradient-sphere sphere-2"></div>
+            <div class="gradient-sphere sphere-3"></div>
+          </div>
+          <div class="container hero-container">
+            <div class="hero-content reveal">
+              <span class="badge">Ingeniero Informático de Software</span>
+              <h1>MANUEL SERRANO <span>CIVANTOS</span></h1>
+              <p class="hero-description">Especializado en arquitecturas de software robustas, seguras y escalables con Java y Python.</p>
+              <div class="hero-actions">
+                <a href="#projects" class="btn btn-primary">Ver Proyectos</a>
+                <a href="/CV_Manuel_Serrano.pdf" download class="btn btn-outline">Descargar CV</a>
+              </div>
+            </div>
+            <div class="hero-visual reveal">
+              <div class="visual-card glass">
+                <div class="visual-content">
+                  <!-- Placeholder for photo or dynamic visual -->
+                  <div class="profile-placeholder">
+                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M12 12C14.21 12 16 10.21 16 8C16 5.79 14.21 4 12 4C9.79 4 8 5.79 8 8C8 10.21 9.79 12 12 12ZM12 14C9.33 14 4 15.34 4 18V20H20V18C20 15.34 14.67 14 12 14Z" fill="currentColor"/>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="about" class="section">
+          <div class="container">
+            <div class="section-header reveal">
+              <span class="section-badge">Perfil Profesional</span>
+              <h2>Sobre mí</h2>
+            </div>
+            <div class="about-grid">
+              <div class="about-text reveal">
+                <p>Ingeniero Informático altamente motivado y especializado en el desarrollo de arquitecturas de software robustas, seguras y escalables. Cuento con una sólida base técnica en el ecosistema Java y Python, aplicando siempre principios de Clean Code, diseño orientado a objetos y patrones de arquitectura como Hexagonal o Microservicios.</p>
+                <p>Mi enfoque profesional combina el rigor analítico de la ingeniería con metodologías ágiles (Scrum/Kanban), buscando constantemente la entrega de soluciones tecnológicas de alto valor añadido que optimicen procesos y mejoren la experiencia de usuario final.</p>
+              </div>
+              <div class="about-stats reveal">
+                <div class="stat-card glass">
+                  <h3>C1</h3>
+                  <p>Inglés Profesional</p>
+                </div>
+                <div class="stat-card glass">
+                  <h3>IBM</h3>
+                  <p>AI Certified</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="experience" class="section bg-light-dark">
+          <div class="container">
+            <div class="section-header reveal">
+              <span class="section-badge">Trayectoria</span>
+              <h2>Experiencia Profesional</h2>
+            </div>
+            <div class="timeline reveal">
+              <div class="timeline-item glass">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date">Actualidad</div>
+                <div class="timeline-content">
+                  <h3>Mentor Técnico y Desarrollador Educativo</h3>
+                  <span class="company">Colegio Altocastillo</span>
+                  <ul>
+                    <li>Diseño y ejecución de planes de estudio adaptativos centrados en programación y lógica computacional.</li>
+                    <li>Optimización de flujos de aprendizaje técnico y gestión de indicadores de desempeño (KPIs) académicos.</li>
+                    <li>Implementación de metodologías ágiles para la organización de proyectos formativos.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="projects" class="section">
+          <div class="container">
+            <div class="section-header reveal">
+              <span class="section-badge">Portafolio</span>
+              <h2>Proyectos de GitHub</h2>
+              <p>Visualización en tiempo real de mis repositorios más recientes.</p>
+            </div>
+            <div id="github-projects" class="projects-grid reveal">
+              <div class="loader">Cargando proyectos...</div>
+            </div>
+          </div>
+        </section>
+
+        <section id="skills" class="section bg-light-dark">
+          <div class="container">
+            <div class="section-header reveal">
+              <span class="section-badge">Expertise</span>
+              <h2>Habilidades Técnicas</h2>
+            </div>
+            <div class="skills-container">
+              <div class="skill-category reveal">
+                <h3>Lenguajes</h3>
+                <div class="skill-tags">
+                  <span class="tag">Java</span>
+                  <span class="tag">Python</span>
+                  <span class="tag">C++</span>
+                  <span class="tag">TypeScript</span>
+                  <span class="tag">JavaScript</span>
+                  <span class="tag">SQL</span>
+                  <span class="tag">Bash</span>
+                </div>
+              </div>
+              <div class="skill-category reveal">
+                <h3>Backend</h3>
+                <div class="skill-tags">
+                  <span class="tag">Spring Boot</span>
+                  <span class="tag">Node.js</span>
+                  <span class="tag">FastAPI</span>
+                  <span class="tag">Arquitectura Hexagonal</span>
+                  <span class="tag">RESTful APIs</span>
+                </div>
+              </div>
+              <div class="skill-category reveal">
+                <h3>Frontend</h3>
+                <div class="skill-tags">
+                  <span class="tag">React</span>
+                  <span class="tag">HTML5</span>
+                  <span class="tag">CSS3</span>
+                  <span class="tag">Tailwind CSS</span>
+                </div>
+              </div>
+              <div class="skill-category reveal">
+                <h3>DevOps & Cloud</h3>
+                <div class="skill-tags">
+                  <span class="tag">Docker</span>
+                  <span class="tag">Kubernetes</span>
+                  <span class="tag">Git</span>
+                  <span class="tag">GitHub Actions</span>
+                  <span class="tag">AWS</span>
+                  <span class="tag">Azure</span>
+                  <span class="tag">Linux</span>
+                </div>
+              </div>
+              <div class="skill-category reveal">
+                <h3>Datos e IA</h3>
+                <div class="skill-tags">
+                  <span class="tag">PostgreSQL</span>
+                  <span class="tag">MongoDB</span>
+                  <span class="tag">Redis</span>
+                  <span class="tag">Scikit learn</span>
+                  <span class="tag">TensorFlow</span>
+                  <span class="tag">PyTorch</span>
+                </div>
+              </div>
+              <div class="skill-category reveal">
+                <h3>Metodologías</h3>
+                <div class="skill-tags">
+                  <span class="tag">Scrum</span>
+                  <span class="tag">Agile</span>
+                  <span class="tag">TDD</span>
+                  <span class="tag">Clean Architecture</span>
+                  <span class="tag">DDD</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="education" class="section">
+          <div class="container">
+            <div class="section-grid">
+              <div class="education-block reveal">
+                <div class="section-header">
+                  <span class="section-badge">Formación</span>
+                  <h2>Educación</h2>
+                </div>
+                <div class="edu-item glass">
+                  <h3>Grado en Ingeniería Informática</h3>
+                  <p class="mencion">Mención en Empresas</p>
+                  <span class="inst">Universidad de Jaén</span>
+                </div>
+                <div class="edu-item glass">
+                  <h3>Movilidad Internacional (Erasmus+)</h3>
+                  <span class="inst">Institución Académica de Portugal</span>
+                </div>
+              </div>
+              <div class="languages-block reveal">
+                <div class="section-header">
+                  <span class="section-badge">Comunicación</span>
+                  <h2>Idiomas</h2>
+                </div>
+                <div class="lang-grid">
+                  <div class="lang-item glass">
+                    <span class="lang-name">Español</span>
+                    <span class="lang-level">Nativo</span>
+                  </div>
+                  <div class="lang-item glass">
+                    <span class="lang-name">Inglés</span>
+                    <span class="lang-level">C1</span>
+                  </div>
+                  <div class="lang-item glass">
+                    <span class="lang-name">Francés</span>
+                    <span class="lang-level">B1</span>
+                  </div>
+                  <div class="lang-item glass">
+                    <span class="lang-name">Portugués</span>
+                    <span class="lang-level">Básico</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="others" class="section bg-light-dark">
+          <div class="container">
+            <div class="section-header reveal">
+              <span class="section-badge">Otros Logros</span>
+              <h2>Logros y Experiencia</h2>
+            </div>
+            <div class="others-grid reveal">
+              <div class="other-card glass">
+                <div class="other-icon">🏆</div>
+                <div class="other-content">
+                  <h3>Salto Hípico</h3>
+                  <p>Alta competición; enfoque metódico, resiliencia y gestión de presión.</p>
+                </div>
+              </div>
+              <div class="other-card glass">
+                <div class="other-icon">🎓</div>
+                <div class="other-content">
+                  <h3>Certificación AI</h3>
+                  <p>«Getting Started with AI» — IBM (2025).</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer id="contact" class="footer">
+        <div class="container">
+          <div class="footer-content">
+            <div class="footer-info">
+              <h2>¿Hablamos?</h2>
+              <p>Estoy siempre abierto a nuevos retos y colaboraciones tecnológicas.</p>
+              <div class="contact-methods">
+                <a href="mailto:mserranocivantos02@gmail.com" class="contact-item">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                  mserranocivantos02@gmail.com
+                </a>
+                <a href="https://github.com/msc00078" target="_blank" class="contact-item">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                  github.com/msc00078
+                </a>
+                <span class="contact-item">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 1 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                  Jaén, España
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="footer-bottom">
+            <p>&copy; 2025 Manuel Serrano Civantos. Diseñado con pasión.</p>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
