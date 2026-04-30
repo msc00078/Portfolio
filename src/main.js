@@ -19,12 +19,28 @@ revealElements.forEach(el => revealObserver.observe(el));
 const navbar = document.getElementById('navbar');
 window.addEventListener('scroll', () => {
   if (window.scrollY > 50) {
-    navbar.style.padding = '10px 30px';
-    navbar.style.background = 'rgba(10, 10, 10, 0.8)';
+    navbar.classList.add('scrolled');
   } else {
-    navbar.style.padding = '12px 30px';
-    navbar.style.background = 'rgba(255, 255, 255, 0.03)';
+    navbar.classList.remove('scrolled');
   }
+});
+
+// Mobile Menu Toggle
+const mobileMenu = document.getElementById('mobile-menu');
+const navLinksContainer = document.querySelector('.nav-links');
+const navLinks = document.querySelectorAll('.nav-links a');
+
+mobileMenu.addEventListener('click', () => {
+  mobileMenu.classList.toggle('active');
+  navLinksContainer.classList.toggle('active');
+});
+
+// Close menu when a link is clicked
+navLinks.forEach(link => {
+  link.addEventListener('click', () => {
+    mobileMenu.classList.remove('active');
+    navLinksContainer.classList.remove('active');
+  });
 });
 
 // GitHub API Integration
@@ -72,10 +88,18 @@ async function fetchGithubProjects() {
 // Smooth Scrolling for Navigation Links
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   anchor.addEventListener('click', function (e) {
+    const href = this.getAttribute('href');
+    if (href === '#') return;
+    
     e.preventDefault();
-    const target = document.querySelector(this.getAttribute('href'));
+    const target = document.querySelector(href);
     if (target) {
-      target.scrollIntoView({
+      const headerOffset = 80;
+      const elementPosition = target.getBoundingClientRect().top;
+      const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+
+      window.scrollTo({
+        top: offsetPosition,
         behavior: 'smooth'
       });
     }
