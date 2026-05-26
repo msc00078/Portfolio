@@ -321,6 +321,20 @@ ul {
   opacity: 0.2;
 }
 
+.visual-content {
+  width: 100%;
+  height: 100%;
+  padding: 15px;
+}
+
+.profile-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 12px;
+  display: block;
+}
+
 /* Sections */
 .section {
   padding: var(--section-padding);
