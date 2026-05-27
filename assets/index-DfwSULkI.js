@@ -3,6 +3,9 @@
           <p>${n.description||`Sin descripción disponible.`}</p>
           <div class="project-meta">
             <span class="project-lang">${n.language||`Code`}</span>
-            <a href="${n.html_url}" target="_blank" class="project-link">Ver Código &rarr;</a>
+            <div class="project-links">
+              ${n.homepage?`<a href="${n.homepage}" target="_blank" class="project-link demo-link">Ver Demo &rarr;</a>`:``}
+              <a href="${n.html_url}" target="_blank" class="project-link">Ver Código &rarr;</a>
+            </div>
           </div>
         `,e.appendChild(r),t.observe(r)}}),e.innerHTML===``&&(e.innerHTML=`<p>No se encontraron proyectos públicos.</p>`)}catch(t){console.error(`Error fetching GitHub projects:`,t),e.innerHTML=`<p>Error al cargar proyectos. Por favor, visita mi perfil de GitHub.</p>`}}document.querySelectorAll(`a[href^="#"]`).forEach(e=>{e.addEventListener(`click`,function(e){let t=this.getAttribute(`href`);if(t===`#`)return;e.preventDefault();let n=document.querySelector(t);if(n){let e=n.getBoundingClientRect().top+window.pageYOffset-80;window.scrollTo({top:e,behavior:`smooth`})}})}),window.addEventListener(`DOMContentLoaded`,()=>{o()});
