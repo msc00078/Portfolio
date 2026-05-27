@@ -556,11 +556,21 @@ ul {
   font-weight: 600;
 }
 
+.project-links {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
 .project-link {
   font-size: 0.8rem;
   font-weight: 700;
   text-transform: uppercase;
   color: var(--primary);
+}
+
+.demo-link {
+  color: var(--secondary);
 }
 
 /* Education & Languages */

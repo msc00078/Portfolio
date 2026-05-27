@@ -66,7 +66,10 @@ async function fetchGithubProjects() {
           <p>${repo.description || 'Sin descripción disponible.'}</p>
           <div class="project-meta">
             <span class="project-lang">${repo.language || 'Code'}</span>
-            <a href="${repo.html_url}" target="_blank" class="project-link">Ver Código &rarr;</a>
+            <div class="project-links">
+              ${repo.homepage ? `<a href="${repo.homepage}" target="_blank" class="project-link demo-link">Ver Demo &rarr;</a>` : ''}
+              <a href="${repo.html_url}" target="_blank" class="project-link">Ver Código &rarr;</a>
+            </div>
           </div>
         `;
 
